@@ -1,5 +1,17 @@
 const scenes = document.querySelectorAll('.scene');
 let index = 0;
+let paused = false;
+
+document.addEventListener('keydown', e => {
+  const scene = scenes[index];
+  const video = scene.querySelector('.video');
+
+  if (e.code === 'Space') {
+    e.preventDefault();
+    paused = !paused;
+    paused ? video.pause() : video.play();
+  }
+});
 
 function playScene(i) {
   scenes.forEach(s => s.classList.remove('active'));
