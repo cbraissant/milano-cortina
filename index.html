@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js" defer></script>
+	<title>Document</title>
 </head>
+
 <body>
 
-    <div id="stage">
-        <div class="scene active">
-            <video class="video" muted playsinline>
-                <source src="assets/sleep.mp4" type="video/mp4">
-            </video>
-            <div class="label">Heart Rate • Speed</div>
-        </div>
+	<div id="stage">
+		<div class="scene active">
+			<video class="video" muted playsinline>
+				<source src="assets/sleep.mp4" type="video/mp4">
+			</video>
+			<div class="label bottom right">
+				<div class="label-header">Sleep tracking</div>
+			</div>
+		</div>
 
-        <div class="scene">
-            <video class="video" muted playsinline>
-                <source src="assets/skating.mp4" type="video/mp4">
-            </video>
-            <div class="label">Power • Cadence</div>
-        </div>
+		<div class="scene">
+			<video class="video" muted playsinline>
+				<source src="assets/skating.mp4" type="video/mp4">
+			</video>
+			<div class="label bottom right">
+				<div class="label-header">Head movement</div>
+			</div>
+		</div>
 
-        <div class="scene">
-            <video class="video" muted playsinline>
-                <source src="assets/shooting.mp4" type="video/mp4">
-            </video>
-            <div class="label">Power • Cadence</div>
-        </div>
-    </div>
+		<div class="scene">
+			<video class="video" muted playsinline>
+				<source src="assets/shooting.mp4" type="video/mp4">
+			</video>
+			<div class="label bottom right">
+				<div class="label-header">Breathing monitoring</div>
+			</div>
+		</div>
+	</div>
 
 </body>
+
 </html>
